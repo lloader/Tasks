@@ -1,0 +1,35 @@
+import java.util.*;
+
+public class BetterProgrammerTask {
+
+    private static double sum = 0;
+    private static int count = 0;
+
+    // Please do not change this interface
+    public static interface Node {
+        int getValue();
+        List<Node> getChildren();
+    }
+
+    public static double getAverage(Node root) {
+	
+        /*
+          Please implement this method to
+          return the average of all node values (Node.getValue()) in the tree.
+         */
+		 
+        func(root);
+        return sum/count;
+    }
+
+    public static void func(Node node) {
+        sum+=node.getValue();
+        count++;
+        if(node.getChildren() != null && !node.getChildren().isEmpty()) {
+            for(Node n : node.getChildren()) {
+                func(n);
+            }
+        }
+    }
+
+}
