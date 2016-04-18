@@ -4,6 +4,8 @@ public class BetterProgrammerTask {
 
     public static class WriteOnceMap<K, V> extends HashMap<K, V> {
 
+        //Second file changed
+
         public V put(K key, V value) {
 		
             /*
