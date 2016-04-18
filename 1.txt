@@ -21,6 +21,8 @@ public class BetterProgrammerTask {
                 //Do nothing
             }
         }
+
+        //First changes
 		
         return sum;
     }
